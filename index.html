@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ quieres ser mi Novia? ♥ </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    .body {
+      background-color: rgb(255, 255, 87);
+      text-align: center;
+      font-family: 'Playpen Sans', cursive;
+      font-size: 30px;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+    width: 100%;
+    max-width: 75%;
+    border-radius: 50px 50px 50px 50px;
+    }
+
+    #yes {
+    font-size: 25px;
+    font-family: 'Playpen Sans', cursive;
+    background-color: #FFD700;
+    border: 5px solid  white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  #yes:hover {
+    background-color: white;
+    color: #FFD700;
+  }
+
+  #no {
+    font-size: 25px;
+    font-family: 'Playpen Sans', cursive;
+    background-color: #FFD700;
+    border: 5px solid  white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+
+  #no:hover {
+    background-color: white; 
+    color: #FFD700; 
+  }
+
+
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">♥ Quieres Ser Mi Novia ? ♥</h1>
+  <img src="https://imagenes.muyinteresante.es/files/article_social//uploads/2022/10/13/6347b34ac46f4.jpeg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">Sip</button>
+  <button id="no">Nop</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('Awwwww Gracias I Love You');
+      alert('Te tengo una cancion');
+      location.href = 'https://www.youtube.com/watch?v=Trb_YTjF9M0&ab_channel=Meysip.torresA.';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
